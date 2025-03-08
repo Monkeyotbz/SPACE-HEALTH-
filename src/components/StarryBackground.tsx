@@ -11,7 +11,7 @@ const StarryBackground: React.FC = () => {
       starsRef.current.innerHTML = '';
 
       // Estrellas fijas
-      for (let i = 0; i < 2000; i++) {
+      for (let i = 0; i < 1000; i++) {
         const star = document.createElement('div');
         star.className = 'star';
         star.style.setProperty('--duration', `${2 + Math.random() * 4}s`);
@@ -42,7 +42,7 @@ const StarryBackground: React.FC = () => {
             logoContainer.style.animation = 'orbit 300s linear infinite';
       
             const logo = document.createElement('img');
-            logo.src = '/LOGO.png';
+            logo.src = './LOGO.png';
             logo.alt = 'Space Health Logo';
             logo.className = 'w-35 h-auto';
             logoContainer.appendChild(logo);
@@ -56,7 +56,7 @@ const StarryBackground: React.FC = () => {
             logoContainer2.style.animation = 'orbit 50s linear infinite';
       
             const logo1 = document.createElement('img');
-            logo1.src = '/LOGO.png';
+            logo1.src = './LOGO.png';
             logo1.alt = 'Space Health Logo';
             logo1.className = 'w-20 h-auto';
             logoContainer2.appendChild(logo1);
